@@ -4,12 +4,12 @@ import main.kotlin.entities.Math
 import main.kotlin.entities.User
 
 fun main(args: Array<String>) {
-    var user = User(name = "")
+    var user = User(firstName = "Matthew", lastName = "Setter")
     var m = Math()
 
     when  {
-        user.name.isNotEmpty() -> {
-            println ("Hello ${user.name}")
+        user.getFullName().isNotEmpty() -> {
+            println ("Hello ${user.getFullName()}")
         }
         else -> println ("Hello no name")
     }
