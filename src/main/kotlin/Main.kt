@@ -1,0 +1,18 @@
+package main
+
+import main.kotlin.entities.Math
+import main.kotlin.entities.User
+
+fun main(args: Array<String>) {
+    var user = User(name = "")
+    var m = Math()
+
+    when  {
+        user.name.isNotEmpty() -> {
+            println ("Hello ${user.name}")
+        }
+        else -> println ("Hello no name")
+    }
+
+    println ("The larger of 1 and 500 is ${m.max(1, 500)}")
+}
