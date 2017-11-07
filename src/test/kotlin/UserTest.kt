@@ -6,7 +6,7 @@ import kotlin.test.assertEquals
 
 class UserTest {
     @Test fun testCanSetAndRetrieveNameProperty() : Unit {
-        var u = User(name = "Matthew")
-        assertEquals("Matthew", u.name)
+        var u = User(firstName = "Matthew", lastName = "Setter")
+        assertEquals("Matthew", u.firstName)
     }
 }

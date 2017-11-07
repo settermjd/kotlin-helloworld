@@ -1,5 +1,8 @@
 package main.kotlin.interfaces
 
 interface Person {
-    fun getName() : String
+    val firstName : String
+    val lastName : String
+
+    fun getFullName(): String
 }
